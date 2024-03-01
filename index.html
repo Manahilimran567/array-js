@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+console.log("Literal notation");
+var studentNames = ["Ayesha","Laiba","Maryam","Zainab","Areesha","Zoya","Zoha"];
+console.log(studentNames);
+console.log("Object notation");
+var studentNames = {
+  names: ["Ayesha","Laiba","Maryam","Zainab","Areesha","Zoya","Zoha"]};
+console.log(studentNames);
+console.log("Strings Array");
+var fruits = ["apple", "banana", "orange", "grape"];
+console.log(fruits);
+console.log("Numbers Array");
+var numbers = [1,2,3,4,5,6,7,8,9,10]
+console.log(numbers);
+console.log("Boolean Array");
+var booleanArray = [true, false, true, false];
+console.log(booleanArray);
+console.log("Mixed Array");
+var mixedArray = [1, "two", true, { name: "John" }, ["apple", "banana"]];
+console.log(mixedArray);7
+console.log("Qualifications");
+var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+
+
+qualifications.forEach(qualification => {
+    console.log( qualification );
+});
+
+
+var studentNames = ["Alice", "Bob", "Charlie"];
+var scores = [420, 380, 450];
+
+
+function calculatePercentage(score) {
+    return (score / 500) * 100;
+}
+
+console.log("Student Scores and Percentages:");
+for (let i = 0; i < studentNames.length; i++) {
+    var name = studentNames[i];
+    var score = scores[i];
+    var percentage = calculatePercentage(score);
+    console.log(name + ": Score - " + score + ", Percentage - " + percentage + "%");
+}
+
+let colors = ["red", "blue", "green"];
+
+console.log("Initial Array: " + colors.join(", ") );
+
+
+var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+colors.unshift(colorToAddAtBeginning);
+
+console.log("Array after adding color to the beginning:" + colors.join(", ") );
+
+var colorToAddAtEnd = prompt("Enter a color to add to the end:");
+colors.push(colorToAddAtEnd);
+
+
+console.log("Array after adding color to the end:< " + colors.join(", ") );
+
+colors.unshift("yellow", "orange");
+
+
+console.log("Array after adding two more colors to the beginning: " + colors.join(", ") );
+
+colors.shift();
+
+console.log("Array after deleting the first color: " + colors.join(", ") );
+
+colors.pop();
+
+
+console.log("Array after deleting the last color: " + colors.join(", ") );
+
+
+var indexToAddColor = prompt("Enter the index to add a color:");
+var colorToAddAtIndex = prompt("Enter the color to add at index " + indexToAddColor + ":");
+colors.splice(indexToAddColor, 0, colorToAddAtIndex);
+
+
+console.log("Array after adding color at index " + indexToAddColor + ":</b> " + colors.join(", ") );
+
+
+var indexToDelete = prompt("Enter the index from where you want to delete color(s):");
+var deleteCount = prompt("Enter the number of colors to delete:");
+colors.splice(indexToDelete, deleteCount);
+
+
+console.log("Array after deleting " + deleteCount + " color(s) from index " + indexToDelete + colors.join(", ") );
+
+var studentScores = [85, 72, 93, 64, 78];
+
+
+console.log("Original array:", studentScores);
+
+
+studentScores.sort((a, b) => a - b);
+
+
+console.log("Sorted array in ascending order:", studentScores);
+
+
+var cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad"];
+  
+console.log(cities);
+var selectedCities = [];
+
+selectedCities.push(cities[0], cities[1], cities[2]);
+
+
+console.log("Selected cities:", selectedCities);
+
+var arr = ["This", "is", "my", "cat"];
+console.log(arr);
+
+var combinedString = arr.join(" ");
+
+
+console.log(combinedString);
+
+
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+
+document.write("<select>");
+document.write("<option value=''>Select a manufacturer</option>");
+manufacturers.forEach(manufacturer => {
+    document.write("<option value='" + manufacturer + "'>" + manufacturer + "</option>");
+});
+document.write("</select>");
+
+
+console.log("First In First Out");
+
+var fifoQueue = [];
+
+fifoQueue.push("Keyboard");
+fifoQueue.push("Mouse");
+fifoQueue.push("Monitor");
+fifoQueue.push("printer");
+
+
+console.log(fifoQueue.shift());
+console.log(fifoQueue.shift()); 
+console.log(fifoQueue.shift()); 
+console.log(fifoQueue.shift()); 
+
+console.log("Last In First Out");
+var fifoQueue = [];
+
+fifoQueue.push("Keyboard");
+fifoQueue.push("Mouse");
+fifoQueue.push("Monitor");
+fifoQueue.push("printer");
+
+
+console.log(fifoQueue.pop());
+console.log(fifoQueue.pop()); 
+console.log(fifoQueue.pop()); 
+console.log(fifoQueue.pop()); 
+    </script>
+</body>
+</html>

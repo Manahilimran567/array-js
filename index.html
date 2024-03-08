@@ -12,32 +12,28 @@
 
 
     <script>
-console.log("Literal notation");
+document.write("<h2>","Literal notation","</h2>", "<br>");
 var studentNames = ["Ayesha","Laiba","Maryam","Zainab","Areesha","Zoya","Zoha"];
-console.log(studentNames);
-console.log("Object notation");
-var studentNames = {
-  names: ["Ayesha","Laiba","Maryam","Zainab","Areesha","Zoya","Zoha"]};
-console.log(studentNames);
-console.log("Strings Array");
+document.write(studentNames, "<br>");
+document.write("<h2>","Strings Array ","</h2>" ,"<br>");
 var fruits = ["apple", "banana", "orange", "grape"];
-console.log(fruits);
-console.log("Numbers Array");
+document.write(fruits, "<br>");
+document.write("<h2>","Numbers Array ","</h2>", "<br>");
 var numbers = [1,2,3,4,5,6,7,8,9,10]
-console.log(numbers);
-console.log("Boolean Array");
+document.write(numbers, "<br>");
+document.write("<h2>","Boolean Array ","</h2>", "<br>");
 var booleanArray = [true, false, true, false];
-console.log(booleanArray);
-console.log("Mixed Array");
+document.write(booleanArray, "<br>");
+document.write("<h2>","Mixed Array" , "</h2>","<br>");
 var mixedArray = [1, "two", true, { name: "John" }, ["apple", "banana"]];
-console.log(mixedArray);7
-console.log("Qualifications");
+document.write(mixedArray, "<br>");7
+document.write("<h2>","Qualifications","</h2>", "<br>");
 var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
 
 
 
 qualifications.forEach(qualification => {
-    console.log( qualification );
+    document.write( qualification, "<br>" );
 });
 
 
@@ -49,20 +45,20 @@ function calculatePercentage(score) {
     return (score / 500) * 100;
 }
 
-console.log("Student Scores and Percentages:");
+document.write("<h2>", "Student Scores and Percentages:", "</h2>", "<br>");
 for (let i = 0; i < studentNames.length; i++) {
     var name = studentNames[i];
     var score = scores[i];
     var percentage = calculatePercentage(score);
-    console.log(name + ": Score - " + score + ", Percentage - " + percentage + "%");
+    document.write(name + ": Score - " + score + ", Percentage - " + percentage + "%", "<br>");
 }
 
 let colors = ["red", "blue", "green"];
 
-console.log("Initial Array: " + colors.join(", ") );
+document.write("<h2>", "Initial Array: " ,"</h2>" + colors.join(", ") , "<br>");
 
 
-var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+/*var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
 colors.unshift(colorToAddAtBeginning);
 
 console.log("Array after adding color to the beginning:" + colors.join(", ") );
@@ -101,51 +97,51 @@ var deleteCount = prompt("Enter the number of colors to delete:");
 colors.splice(indexToDelete, deleteCount);
 
 
-console.log("Array after deleting " + deleteCount + " color(s) from index " + indexToDelete + colors.join(", ") );
+console.log("Array after deleting " + deleteCount + " color(s) from index " + indexToDelete + colors.join(", ") );*/
 
 var studentScores = [85, 72, 93, 64, 78];
 
 
-console.log("Original array:", studentScores);
+document.write("<h2>", "Original array:" ,"</h2>" , studentScores, "<br>");
 
 
 studentScores.sort((a, b) => a - b);
 
 
-console.log("Sorted array in ascending order:", studentScores);
+document.write("<h2>", "Sorted array in ascending order:" ,"</h2>" , studentScores, "<br>");
 
 
 var cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad"];
   
-console.log(cities);
+document.write("<h2>","Cities Names:","</h2>",cities, "<br>");
 var selectedCities = [];
 
 selectedCities.push(cities[0], cities[1], cities[2]);
 
 
-console.log("Selected cities:", selectedCities);
+document.write("<h2>","Selected cities:","</h2>", selectedCities, "<br>");
 
 var arr = ["This", "is", "my", "cat"];
-console.log(arr);
+document.write("<h2>","Before","</h2>",arr, "<br>");
 
 var combinedString = arr.join(" ");
 
 
-console.log(combinedString);
+document.write("<h2>","After","</h2>",combinedString, "<br>","<br>");
 
 
 var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
 
 
-document.write("<select>");
-document.write("<option value=''>Select a manufacturer</option>");
+document.write("<select>", "<br>");
+document.write("<option value=''>Select a manufacturer</option>", "<br>");
 manufacturers.forEach(manufacturer => {
-    document.write("<option value='" + manufacturer + "'>" + manufacturer + "</option>");
+    document.write("<option value='" + manufacturer + "'>" + manufacturer + "</option>", "<br>");
 });
-document.write("</select>");
+document.write("</select>", "<br>");
 
 
-console.log("First In First Out");
+document.write("<h2>","First In First Out","</h2>", "<br>");
 
 var fifoQueue = [];
 
@@ -155,12 +151,12 @@ fifoQueue.push("Monitor");
 fifoQueue.push("printer");
 
 
-console.log(fifoQueue.shift());
-console.log(fifoQueue.shift()); 
-console.log(fifoQueue.shift()); 
-console.log(fifoQueue.shift()); 
+document.write(fifoQueue.shift(), "<br>");
+document.write(fifoQueue.shift(), "<br>"); 
+document.write(fifoQueue.shift(), "<br>"); 
+document.write(fifoQueue.shift(), "<br>"); 
 
-console.log("Last In First Out");
+document.write("<h2>","Last In First Out" ,"</h2>","<br>");
 var fifoQueue = [];
 
 fifoQueue.push("Keyboard");
@@ -169,10 +165,10 @@ fifoQueue.push("Monitor");
 fifoQueue.push("printer");
 
 
-console.log(fifoQueue.pop());
-console.log(fifoQueue.pop()); 
-console.log(fifoQueue.pop()); 
-console.log(fifoQueue.pop()); 
+document.write(fifoQueue.pop(), "<br>");
+document.write(fifoQueue.pop(), "<br>"); 
+document.write(fifoQueue.pop(), "<br>"); 
+document.write(fifoQueue.pop(), "<br>"); 
     </script>
 </body>
 </html>
